@@ -1,0 +1,389 @@
+.logo-title{
+    font-size: 65pt;
+    padding-left: 30px;
+}
+.manual-title{
+    font-size: 35pt;
+    margin-bottom: -15px !important;
+}
+.manual-model{
+    font-size: 65pt;
+}
+.manual .manual-item .manual-content {
+    font-size: 30pt;
+    min-height: 82px;
+}
+.breadcrumb-item{
+    font-size: 22pt;
+}
+.manual-content-container {
+    min-height: 100vh;
+    width: 100%;
+    font-size: 22pt;
+}
+a.sidebar-link {
+    padding: .625rem 1rem;
+    font-size: 22pt;
+}
+
+.manual-content-container .manual-heading-l2{
+    font-size: 50pt;
+}
+.manual-content-container .manual-heading-l3{
+    font-size: 26pt;
+    margin: 1rem 0;
+}
+
+@media only screen
+and (max-width: 1800px){
+    .breadcrumb-panel{
+        top: 110px;
+        z-index: 100;
+    }
+    .logo-title{
+        font-size: 65px;
+        padding-left: 30px;
+    }
+    .manual-title{
+        font-size: 35px;
+        margin-bottom: -15px !important;
+    }
+    .manual-model{
+        font-size: 65px;
+    }
+    .manual .manual-item .manual-content {
+        font-size: 30px;
+        min-height: 82px;
+    }
+    .breadcrumb-item{
+        font-size: 22px;
+    }
+    .manual-content-container {
+        min-height: 100vh;
+        width: 100%;
+        font-size: 22px;
+    }
+    a.sidebar-link {
+        padding: .625rem 1rem;
+        font-size: 22px;
+    }
+    .manual-content-container .manual-heading-l2{
+        font-size: 50px;
+    }
+    .manual-content-container .manual-heading-l3{
+        font-size: 24px;
+        margin: 1rem 0;
+    }
+    .pt-10{
+        padding-top: 12rem !important;
+    }
+    .logo {
+        /*width: 100px;*/
+        margin-top: -16px;
+    }
+    #sidebar {
+        max-width: 400px;
+        min-width: 400px;
+    }
+    #sidebar.collapsed {
+        margin-left: -400px;
+    }
+    .breadcrumb-panel-fix-ht {
+        height: 78px;
+    }
+}
+
+@media only screen
+and (max-width: 1280px){
+    .breadcrumb-panel{
+        top: 100px;
+        z-index: 100;
+    }
+    .logo-title{
+        font-size: 55px;
+        padding-left: 30px;
+    }
+    .manual-title{
+        font-size: 30px;
+        margin-bottom: -10px !important;
+    }
+    .manual-model{
+        font-size: 55px;
+    }
+    .manual .manual-item .manual-content {
+        font-size: 22px;
+        min-height: 82px;
+    }
+    .breadcrumb-item{
+        font-size: 18px;
+    }
+    .manual-content-container {
+        min-height: 100vh;
+        width: 100%;
+        font-size: 18px;
+    }
+    a.sidebar-link {
+        padding: .625rem 1rem;
+        font-size: 18px;
+    }
+    .manual-content-container .manual-heading-l2{
+        font-size: 40px;
+    }
+    .manual-content-container .manual-heading-l3{
+        font-size: 22px;
+        margin: 1rem 0;
+    }
+    .pt-10{
+        padding-top: 10rem !important;
+    }
+    .logo {
+        width: 80px;
+        margin-top: -10px;
+    }
+    .py-4 {
+        padding-top: 1rem!important;
+        padding-bottom: 1rem!important;
+    }
+    .breadcrumb-panel-fix-ht {
+        height: 60px;
+    }
+    #sidebar {
+        max-width: 370px;
+        min-width: 370px;
+    }
+    #sidebar.collapsed {
+        margin-left: -370px;
+    }
+    .sideBarMenu{
+        margin-top: 0rem;
+    }
+}
+
+@media only screen
+and (max-width: 1110px){
+    .logo-title{
+        font-size: 48px;
+        padding-left: 20px;
+    }
+    .manual-title{
+        font-size: 28px;
+        margin-bottom: -8px !important;
+    }
+    .manual-model{
+        font-size: 48px;
+    }
+    .manual-content-container .manual-heading-l2{
+        font-size: 38px;
+    }
+    .manual-content-container .manual-heading-l3{
+        font-size: 22px;
+        margin: 1rem 0;
+    }
+    .manual-model.px-4{
+        padding-left: 1rem!important;
+    }
+    .logo {
+        margin-top: -5px;
+    }
+}
+@media only screen
+and (max-width: 1024px){
+    .banner-wrap.px-lg-5{
+        padding-right: 2rem!important;
+        padding-left: 2rem!important;
+    }
+    .breadcrumb-panel {
+        top: 82px;
+        z-index: 100;
+    }
+    .logo-title{
+        font-size: 46px;
+        padding-left: 20px;
+    }
+    .manual-title{
+        font-size: 28px;
+        margin-bottom: -15px !important;
+    }
+    .manual-model{
+        font-size: 46px;
+    }
+    .manual .manual-item .manual-content {
+        font-size: 22px;
+        min-height: 82px;
+    }
+    .breadcrumb-item{
+        font-size: 18px;
+    }
+    .manual-content-container {
+        min-height: 100vh;
+        width: 100%;
+        font-size: 18px;
+    }
+    a.sidebar-link {
+        padding: .625rem 1rem;
+        font-size: 18px;
+    }
+    .manual-content-container .manual-heading-l2{
+        font-size: 34px;
+    }
+    .manual-content-container .manual-heading-l3{
+        font-size: 22px;
+        margin: 1rem 0;
+    }
+    .pt-10{
+        padding-top: 9rem !important;
+    }
+    .logo {
+        width: 65px;
+        margin-top: -12px;
+    }
+    .py-4 {
+        padding-top: 1rem!important;
+        padding-bottom: 1rem!important;
+    }
+    .breadcrumb-panel-fix-ht {
+        height: 60px;
+    }
+    #sidebar {
+        max-width: 370px;
+        min-width: 370px;
+    }
+    #sidebar.collapsed {
+        margin-left: -370px;
+    }
+    .sideBarMenu{
+        margin-top: 0rem;
+    }
+    .sideBarMenu {
+        background-image: url(../img/Menu_Normal.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        /* height: 32px; */
+        background-color: transparent;
+        border: 0;
+        margin-top: 0.25rem;
+    }
+}
+
+@media only screen
+and (max-width: 990px){
+    .navbar-light .navbar-brand img {
+        max-height: 45px;
+        max-width: 45px;
+    }
+    .logo-title {
+        font-size: 40px;
+        padding-left: 16px;
+    }
+    .manual-model {
+        font-size: 40px;
+    }
+    .logo {
+        margin-top: -4px;
+    }
+    .banner-wrap.py-2{
+        padding-top: 0.0rem!important;
+        padding-bottom: 0.0rem!important;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto !important;
+    }
+    .manual-title {
+        font-size: 24px;
+        margin-bottom: -6px !important;
+    }
+    .breadcrumb-panel-fix-ht {
+        height: 56px;
+    }
+    .pt-10 {
+        padding-top: 0rem !important;
+    }
+    .navbar {
+        padding-bottom: 0;
+    }
+    .breadcrumb-item {
+        font-size: 18px;
+    }
+    a.sidebar-link {
+        padding: 0.5rem 0.5rem;
+        font-size: 18px;
+    }
+    #sidebar {
+        max-width: 300px;
+        min-width: 300px;
+    }
+    #sidebar.collapsed {
+        margin-left: -300px;
+    }
+    .content-container.py-5{
+        padding-top: 2rem!important;
+        padding-bottom: 2rem!important;
+    }
+    .breadcrumb-panel{
+        position: unset;
+    }
+}
+@media only screen
+and (max-width: 800px){
+    .banner-wrap.px-lg-5 {
+        padding-right: 1rem!important;
+        padding-left: 1rem!important;
+    }
+    .logo-title {
+        font-size: 38px;
+        padding-left: 16px;
+    }
+    .manual-model {
+        font-size: 38px;
+    }
+    .manual-content-container .manual-heading-l2{
+        font-size: 30px;
+    }
+    .breadcrumb-panel{
+        position: unset;
+    }
+}
+
+@media only screen
+and (max-width: 740px){
+    .banner-wrap {
+        display: grid;
+        width: 100%;
+    }
+}
+
+@media only screen
+and (max-width: 530px){
+    .logo-title {
+        font-size: 28px;
+        padding-left: 16px;
+    }
+    .manual-model {
+        font-size: 28px;
+    }
+    .manual-title {
+        font-size: 20px;
+        margin-bottom: 6px !important;
+    }
+    .manual-content-container .manual-heading-l2 {
+        font-size: 26px;
+    }
+
+    .sidebar-nav.mx-3 {
+        margin-right: 0.5rem!important;
+        margin-left: 0.5rem!important;
+    }
+    #sidebar {
+        max-width: 270px;
+        min-width: 270px;
+    }
+    #sidebar.collapsed {
+        margin-left: -270px;
+    }
+    .manual-content-container.mx-3{
+        margin-left: 0rem!important;
+        margin-right: 0rem!important;
+    }
+}

@@ -1,0 +1,33 @@
+/* Define the custom fonts */
+@font-face {
+    font-family: 'Arial-Reg';
+    src: url('ARIAL.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arial-BD';
+    src: url('ARIALBD.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'VolvoBroad';
+    src: url('VolvoBroad.ttf') format('truetype');
+}
+
+/* Apply the custom fonts */
+body {
+    font-family: 'Arial-Reg','Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'VolvoBroad', 'Arial', sans-serif;;
+}
+
+/* Additional styles using the custom fonts */
+p.custom {
+    font-family: 'Arial-Reg', Arial, sans-serif;
+}
+
+div.custom-heading {
+    font-family: 'VolvoBroad', Georgia, serif;
+}
