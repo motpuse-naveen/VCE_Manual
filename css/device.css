@@ -17,7 +17,7 @@
     font-size: 22pt;
 }
 .manual-content-container {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     width: 100%;
     font-size: 22pt;
 }
@@ -59,7 +59,7 @@ and (max-width: 1800px){
         font-size: 22px;
     }
     .manual-content-container {
-        min-height: 100vh;
+        /*min-height: 100vh;*/
         width: 100%;
         font-size: 22px;
     }
@@ -118,7 +118,7 @@ and (max-width: 1280px){
         font-size: 18px;
     }
     .manual-content-container {
-        min-height: 100vh;
+        /*min-height: 100vh;*/
         width: 100%;
         font-size: 18px;
     }
@@ -215,7 +215,7 @@ and (max-width: 1024px){
         font-size: 18px;
     }
     .manual-content-container {
-        min-height: 100vh;
+        /*min-height: 100vh;*/
         width: 100%;
         font-size: 18px;
     }

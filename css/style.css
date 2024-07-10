@@ -6,7 +6,8 @@
     --vce-footer:#4d4e53;
     --vce-white:#FFFFFF;
     --vce-green: #B9D986;
-    --vce-green-border: #74C043;
+    --vce-green-border: #569E2B;
+    --vce-red-instr: #F35456;
 }
 /*** Spinner Start ***/
 /*** Spinner ***/
@@ -399,6 +400,7 @@
 
 .manual .manual-item:hover {
     background: var(--vce-green);
+    border: 1px solid var(--vce-green-border) !important;
 }
 
 .manual .manual-item:hover .manual-img::before {
@@ -456,7 +458,7 @@
     color: var(--vce-blue);
 }
 .manual-border{
-    border: 1px solid #000000aa !important
+    border: 1px solid #000000aa;
 }
 .pt-10{
     padding-top: 14rem !important;
@@ -543,24 +545,23 @@
     list-style: none;
 }
 
-
-
-
 .manual-content-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
     font-family: 'Arial-Reg';
     font-size: 22pt;
+    padding-bottom: 2rem;
 }
 
 .manual-content-container .manual-heading-l2{
     font-family: 'VolvoBroad';
     font-size: 50pt;
     color: var(--vce-blue);
+    text-transform: capitalize;
 }
 .manual-content-container .manual-heading-l3{
     font-family: 'Arial-BD';
@@ -672,3 +673,131 @@ ul li ul li a.sidebar-link{
 }
 /*** copyright end ***/
 
+.instruction_note{
+color: var(--vce-red-instr);
+}
+
+/*L45H-L50H*/
+.machine-tabs-container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.machine-container{
+    position: relative;
+    margin: 1rem auto;
+    width: 580px;
+    height: 345px;
+}
+h3.tab-title{
+    margin-left: 1rem;
+    display: inline-block;
+    font-size: 22pt;
+}
+.machine-container .nav-link{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+    background-color: var(--vce-blue);
+    color: var(--vce-white);
+    border: 2px solid var(--vce-bark-blue);
+    font-size: 22pt;
+}
+.machine-container .nav-link.active{
+    border: 2px solid var(--vce-green-border);
+    background-color: var(--vce-green);
+    color: var(--vce-black);
+}
+.machine-container .nav-link:hover, .machine-container .nav-link:focus{
+    border: 2px solid var(--vce-green-border);
+    background-color: var(--vce-green);
+    color: var(--vce-black);
+}
+.tab-pane span.tab-number{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+    border: 2px solid var(--vce-green-border);
+    background-color: var(--vce-green);
+    color: var(--vce-black);
+    display: inline-block;
+    font-size: 22pt;
+}
+.product-plates .nav-tabs{
+    border-bottom: 0px;
+}
+.machine-tabs-container .tab-content{
+    margin-top: 2rem;
+}
+.machine-tabs-container .tab-text{
+    margin-top: 1.5rem;
+}
+.product-plates .machine-container #nav-1-tab{
+    top: 90%;
+    left: 41%;
+}
+.product-plates .machine-container #nav-2-tab{
+    top: 92%;
+    left: 60%;
+}
+.product-plates .machine-container #nav-3-tab{
+    top: 93%;
+    left: 68%;
+}
+.product-plates .machine-container #nav-4-tab{
+    top: 86%;
+    left: 49%;
+}
+.product-plates .machine-container #nav-5-tab{
+    top: 85%;
+    left: 33%;
+}
+.product-plates .machine-container #nav-6a-tab{
+    top: -1%;
+    left: -3%;
+}
+.product-plates .machine-container #nav-6b-tab{
+    top: 81%;
+    left: 73%;
+}
+.product-plates .machine-container #nav-7-tab{
+    top: 83%;
+    left: 40%;
+}
+.product-plates .machine-container #nav-8-tab{
+    top: 4%;
+    left: 76%;
+}
+.product-plates .machine-container #nav-9-tab{
+    top: 87%;
+    left: 40%;
+}
+/*End L45H-L50H*/
+
+/*Machine View*/
+.machine-view .machine-container #nav-1-tab{
+    top: 90%;
+    left: 41%;
+}
+.machine-view .machine-container #nav-2-tab{
+    top: 92%;
+    left: 60%;
+}
+.machine-view .machine-container #nav-3-tab{
+    top: 93%;
+    left: 68%;
+}
+
+/*Presentation View*/
+.pres-img-wrapper {
+    max-width: 600px;
+    margin: auto;
+}
+
+.pres-img-wrapper img{
+    max-width: 700px;
+}

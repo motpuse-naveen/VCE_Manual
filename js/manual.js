@@ -67,6 +67,11 @@ $(document).on("click", ".sidebar-link", function (event) {
     VCE_Manual.LoadMenuItem(menuItem, this);
 });
 
+$(document).on("click", ".nav.nav-tabs .nav-link", function (event) {
+    $(".nav.nav-tabs .nav-link").removeClass("active");
+    $(this).addClass("active");
+});
+
 var VCE_Manual = (function () {
     var _manualFolder = "";
     var _manualTitle = "";
