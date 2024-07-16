@@ -15,6 +15,7 @@
     const toggler = document.querySelector("#sidebarCollapse");
     toggler.addEventListener("click", function () {
         document.querySelector("#sidebar").classList.toggle("collapsed");
+        document.querySelector("#manual-content-wrapper").classList.toggle("sidebar-padding");
         this.classList.toggle("active");
     });
 
@@ -26,15 +27,6 @@
         if (!results[2]) return '';
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
-
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $(".navbar").addClass("sticky-top shadow-sm");
-        } else {
-            $(".navbar").removeClass("sticky-top shadow-sm");
-        }
-    });
 
     $(document).ready(function () {
         var manualTitle = getParameterByName("mt");
@@ -59,7 +51,7 @@ $(document).on("click", ".sidebar-link", function (event) {
         }
     }
     menuItem = {
-        page: menuTitle.replace(/ /g, '_').toLowerCase(),
+        page: menuTitle.replace(/ /g, '_').replace(/,/g, '').toLowerCase(),
         title: menuTitle,
         mainMenu: mainMenuTitle,
         mainMenuId: mainMenuId

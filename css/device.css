@@ -81,12 +81,14 @@ and (max-width: 1800px){
         /*width: 100px;*/
         margin-top: -16px;
     }
-    #sidebar {
-        max-width: 400px;
-        min-width: 400px;
-    }
     #sidebar.collapsed {
         margin-left: -400px;
+    }
+    .sidebar-width{
+        width: 400px;
+    }
+    .sidebar-padding{
+        padding-left: 400px;
     }
     .breadcrumb-panel-fix-ht {
         height: 78px;
@@ -147,12 +149,14 @@ and (max-width: 1280px){
     .breadcrumb-panel-fix-ht {
         height: 60px;
     }
-    #sidebar {
-        max-width: 370px;
-        min-width: 370px;
-    }
     #sidebar.collapsed {
         margin-left: -370px;
+    }
+    .sidebar-width{
+        width: 370px;
+    }
+    .sidebar-padding{
+        padding-left: 370px;
     }
     .sideBarMenu{
         margin-top: 0rem;
@@ -244,13 +248,6 @@ and (max-width: 1024px){
     .breadcrumb-panel-fix-ht {
         height: 60px;
     }
-    #sidebar {
-        max-width: 370px;
-        min-width: 370px;
-    }
-    #sidebar.collapsed {
-        margin-left: -370px;
-    }
     .sideBarMenu{
         margin-top: 0rem;
     }
@@ -310,12 +307,14 @@ and (max-width: 990px){
         padding: 0.5rem 0.5rem;
         font-size: 18px;
     }
-    #sidebar {
-        max-width: 300px;
-        min-width: 300px;
-    }
     #sidebar.collapsed {
         margin-left: -300px;
+    }
+    .sidebar-width{
+        width: 300px;
+    }
+    .sidebar-padding{
+        padding-left: 300px;
     }
     .content-container.py-5{
         padding-top: 2rem!important;
@@ -375,12 +374,14 @@ and (max-width: 530px){
         margin-right: 0.5rem!important;
         margin-left: 0.5rem!important;
     }
-    #sidebar {
-        max-width: 270px;
-        min-width: 270px;
-    }
     #sidebar.collapsed {
         margin-left: -270px;
+    }
+    .sidebar-width{
+        width: 270px;
+    }
+    .sidebar-padding{
+        padding-left: 270px;
     }
     .manual-content-container.mx-3{
         margin-left: 0rem!important;

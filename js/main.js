@@ -15,11 +15,11 @@
 
   // Sticky Navbar
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 45) {
+    /*if ($(this).scrollTop() > 45) {
       $(".navbar").addClass("sticky-top shadow-sm");
     } else {
       $(".navbar").removeClass("sticky-top shadow-sm");
-    }
+    }*/
   });
 
   // Modal Video
@@ -40,6 +40,7 @@
     $("#videoModal").on("hide.bs.modal", function (e) {
       $("#video").attr("src", $videoSrc);
     });
+    
   });
 
   // Back to top button

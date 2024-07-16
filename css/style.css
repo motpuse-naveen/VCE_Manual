@@ -1,16 +1,36 @@
 :root {
-    --vce-black:#000000;
-    --vce-blue: #1251b5;
-    --vce-bark-blue:#182871;
+    --vce-black:#040404;
     --vce-outline:#00000a;
     --vce-footer:#4d4e53;
     --vce-white:#FFFFFF;
     --vce-green: #B9D986;
     --vce-green-border: #569E2B;
     --vce-red-instr: #F35456;
+    --vce-gray:#E0E0E0;
+    --vce-gray-border:#AFAFAF;
+    --vce-orange:#FEC572;
+    --vce-orange-border:#F5872C;
+    --vce-heading-blue:#143C8B;
+    --vce-blue: #1251b5;
+    --vce-blue-border:#182871;
+    --vce-bark-blue:#182871;
+    
 }
 /*** Spinner Start ***/
 /*** Spinner ***/
+ul.default-list{
+    padding: 0;
+}
+ul.default-list li {
+    margin: 0 2rem;
+    padding: 0 1rem;
+}
+h3.heading, h4.heading, h5.heading, h6.heading{
+    color: var(--vce-heading-blue);
+}
+b{
+    font-family: 'Arial-BD';
+}
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -463,20 +483,27 @@
 .pt-10{
     padding-top: 14rem !important;
 }
+.pb-5{
+    padding-bottom: 2rem!important;
+}
 .breadcrumb-panel{
     display: flex;
     background: var(--vce-bark-blue);
-    /*height: 100px;*/
-    width: 100%;
+    padding-top: 1.4rem!important;
+    padding-bottom: 1.4rem!important;
+    /*width: 100%;
     position: absolute;
     top: 136px;
-    z-index: 100;
+    z-index: 100;*/
+    /*height: 100px;*/
 }
 .breadcrumb-panel-fix-ht{
     height: 92px;
 }
 .banner-nav-bar{
     display:block;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .banner-wrap{
     display: flex;
@@ -520,20 +547,27 @@
     align-items: stretch;
     display: flex;
     width: 100%;
-    padding-left: 0 !important;
+    padding-left:0;
+    padding-right:0;
 }
 
 #sidebar {
-    max-width: 450px;
-    min-width: 450px;
     transition: all 0.35s ease-in-out;
-    /*box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);*/
     z-index: 80;
+    position: fixed;
+    top: 0;
+    padding-bottom: 0;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin-top: -10px;
+}
+
+#sidebar-dummy {
+    transition: all 0.35s ease-in-out;
+    z-index: 70;
     background-color: #DCDDD8;
 }
-#sidebar.collapsed {
-    margin-left: -450px;
-}
+
 
 #sidebar a {
     cursor: pointer;
@@ -545,10 +579,24 @@
     list-style: none;
 }
 
+#sidebar #sidebarContent{
+    overflow: auto;
+    background-color: #DCDDD8;
+}
+#sidebar.collapsed {
+    margin-left: -450px;
+}
+.sidebar-width{
+    width: 450px;
+}
+.sidebar-padding{
+    transition: all 0.6s ease;
+    padding-left: 450px;
+}
+
 .manual-content-container {
     display: flex;
     flex-direction: column;
-    /*min-height: 100vh;*/
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
@@ -575,7 +623,7 @@
 
 .sidebar-nav {
     padding: 0;
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 .sidebar-header {
@@ -589,9 +637,9 @@
     color: var(--vce-black);
     position: relative;
     display: block;
-    
     font-family: 'Arial-Reg';
     font-size: 22pt;
+    line-height: 1.3em;
 }
 
 .sidebar-item .sidebar-link[data-bs-toggle="collapse"].collapsed{
@@ -682,18 +730,22 @@ color: var(--vce-red-instr);
     max-width: 1920px;
     margin: 0 auto;
 }
-.machine-container{
+.machine-container {
     position: relative;
     margin: 1rem auto;
+}
+.mc1{
     width: 580px;
     height: 345px;
 }
+
 h3.tab-title{
     margin-left: 1rem;
     display: inline-block;
     font-size: 22pt;
 }
-.machine-container .nav-link{
+.machine-container .nav-link, 
+.instrument-container .nav-link-circle{
     position: absolute;
     width: 46px;
     height: 46px;
@@ -705,14 +757,30 @@ h3.tab-title{
     border: 2px solid var(--vce-bark-blue);
     font-size: 22pt;
 }
-.machine-container .nav-link.active{
+.instrument-container .nav-link-circle{
+    background-color: var(--vce-gray);
+    color: var(--vce-black);
+    border: 2px solid var(--vce-gray-border);
+}
+.machine-container .nav-link.active {
     border: 2px solid var(--vce-green-border);
     background-color: var(--vce-green);
     color: var(--vce-black);
 }
-.machine-container .nav-link:hover, .machine-container .nav-link:focus{
+.instrument-container .nav-link-circle.active {
+    border: 2px solid var(--vce-orange-border);
+    background-color: var(--vce-orange);
+    color: var(--vce-black);
+}
+.machine-container .nav-link:hover, .machine-container .nav-link:focus {
     border: 2px solid var(--vce-green-border);
     background-color: var(--vce-green);
+    color: var(--vce-black);
+}
+.instrument-container .nav-link-circle:hover, 
+.instrument-container .nav-link-circle:focus{
+    border: 2px solid var(--vce-orange-border);
+    background-color: var(--vce-orange);
     color: var(--vce-black);
 }
 .tab-pane span.tab-number{
@@ -776,6 +844,7 @@ h3.tab-title{
     top: 87%;
     left: 40%;
 }
+
 /*End L45H-L50H*/
 
 /*Machine View*/
@@ -801,3 +870,182 @@ h3.tab-title{
 .pres-img-wrapper img{
     max-width: 700px;
 }
+
+.warning-bg{
+    background-image: url(../partial-views/L45H_L50H/images/WARNING_BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.5rem;
+    padding-left: 4rem !important;
+    border: 1px solid;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-family: 'Arial-BD';
+}
+p.warning-bg{
+    padding-top: 0.2rem; 
+}
+.simple-table{
+    width: auto;
+}
+.simple-table tr td{
+    padding: 0.5rem 1rem;
+    min-width: 120px;
+}
+
+.simple-table tr td.h-center{
+    text-align: center;
+}
+/*
+.instrument-panels-front .row .col-left{
+    width: 40%;
+}
+.instrument-panels-front .row .col-right{
+    width: 60%;
+}
+*/
+.instrument-container{
+    position: relative;
+    margin: 2rem auto;
+}
+.instrument-container.mc2{
+    width: 520px;
+}
+.v-tab-container.mc3{
+    min-width: 700px;
+}
+
+.instrument-tabs-container .col-left{
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.instrument-panels-front .instrument-container #num-1-tab{
+    top: -3%;
+    left: 17.5%;
+}
+.instrument-panels-front .instrument-container #num-2-tab{
+    top: -8%;
+    left: 72%;
+}
+.instrument-panels-front .instrument-container #num-3-tab{
+    top: 97%;
+    left: 89%;
+}
+.instrument-panels-front .instrument-container #num-4-tab{
+    top: 97%;
+    left: 78%;
+}
+.instrument-panels-front .instrument-container #num-5-tab{
+    top: 94%;
+    left: 68%;
+}
+.instrument-panels-front .instrument-container #num-6-tab{
+    top: 97%;
+    left: 57%;
+}
+.instrument-panels-front .instrument-container #num-7-tab{
+    top: 75%;
+    left: 10%;
+}
+.instrument-panels-front .instrument-container #num-8-tab{
+    top: 73%;
+    left: -1%;
+}
+
+.warning-panel{
+    position: relative;
+    padding: 2rem;
+    border: 1px solid var(--vce-black);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding-top: 3rem;
+}
+span.warning-head {
+    margin: 0 !important;
+    position: absolute;
+    top: -20px;
+    border: 1px solid var(--vce-black);
+    border-radius: 7px;
+    padding-top: 3px !important;
+}
+
+.nav-pills .nav-link{
+    margin: 0.5rem 0rem;
+    background-color: var(--vce-blue);
+    border: 1px solid var(--vce-blue-border);
+    line-height: 1.3em;
+    color: var(--vce-white);
+    text-align: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.instrument-panels-front .nav-pills .nav-link .flex-column{
+    white-space: nowrap;
+}
+.nav-pills button.nav-link span.num-circle{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--vce-blue);
+    color: var(--vce-white);
+    border: 2px solid var(--vce-bark-blue);
+    font-size: 22pt;
+    padding: 0.4rem;
+    margin-right: 1rem;
+    line-height: 2rem;
+}
+.v-tab-container .tab-content {
+    padding: 1rem;
+    border: 1px solid var(--vce-black);
+    border-radius: 0.5rem;
+    flex: 1;
+    align-self: stretch;
+    min-width: 600px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-link:focus, .nav-pills .nav-link:hover {
+    background-color: var(--vce-green);
+    border: 1px solid var(--vce-green-border);
+    color: var(--vce-black);
+}
+.nav-pills .nav-link.active span.num-circle,
+.nav-pills .nav-link:focus span.num-circle, .nav-pills .nav-link:hover span.num-circle
+{
+    border: 2px solid var(--vce-orange-border);
+    background-color: var(--vce-orange);
+    color: var(--vce-black);
+}
+/*
+.instrument-panels-front .nav-pills .nav-link{
+    position: relative;
+    padding: 16px;
+    padding-left: 4rem;
+    width: 360px;
+}
+.instrument-panels-front .nav-pills .nav-link.dlc{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.instrument-panels-front .nav-pills button.nav-link span.num-circle{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+    background-color: var(--vce-blue);
+    color: var(--vce-white);
+    border: 2px solid var(--vce-bark-blue);
+    font-size: 22pt;
+    left: 0.5rem;
+    top: 0.5rem;
+    padding: 0.5rem;
+}
+.instrument-panels-front .nav-pills button.nav-link.nav-link.dlc span.num-circle{
+    top: 0.9rem;
+}
+*/
