@@ -1003,7 +1003,7 @@ span.warning-head {
     border-radius: 0.5rem;
     flex: 1;
     align-self: stretch;
-    min-width: 600px;
+    min-width: 450px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .nav-link:focus, .nav-pills .nav-link:hover {

@@ -61,6 +61,17 @@ $(document).on("click", ".sidebar-link", function (event) {
 
 $(document).on("click", ".nav.nav-tabs .nav-link", function (event) {
     $(".nav.nav-tabs .nav-link").removeClass("active");
+});
+
+$(document).on("click", ".nav-pills .nav-link", function(event){
+    var tabId = $(this).attr("id");
+    $(".nav-link-circle").removeClass("active");
+    $("#" + tabId.replace("nav","num")).addClass("active");
+});
+$(document).on("click", ".instrument-container .nav-link-circle", function(event){
+    var tabtargetid = $(this).attr("data-bs-target");
+    $(tabtargetid).tab("show");
+    $(".nav-link-circle").removeClass("active");
     $(this).addClass("active");
 });
 
