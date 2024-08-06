@@ -1,0 +1,103 @@
+:root {
+    --vce-black:#040404;
+    --vce-outline:#00000a;
+    --vce-footer:#4d4e53;
+    --vce-white:#FFFFFF;
+    --vce-green: #B9D986;
+    --vce-green-border: #569E2B;
+    --vce-red-instr: #F35456;
+    --vce-gray:#E0E0E0;
+    --vce-gray-border:#AFAFAF;
+    --vce-orange:#FEC572;
+    --vce-orange-border:#F5872C;
+    --vce-heading-blue:#143C8B;
+    --vce-blue: #1251b5;
+    --vce-blue-border:#182871;
+    --vce-bark-blue:#182871;
+    --vce-white-bg:#F8F9FA;
+    --vce-notice-color:#DCDDD7;
+}
+
+.note-panel{
+    position: relative;
+    border: 1px solid var(--vce-outline);
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.note-panel::before{
+    content: 'NOTE!';
+    position: absolute;
+    font-family: 'Arial-BD';
+    top: -25px;
+    left: 21px;
+    background-image: url(../img/Note.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 6px 15px 0px 56px;
+    border-radius: 10px;
+}
+
+.warning-panel{
+    position: relative;
+    padding: 2rem;
+    border: 1px solid var(--vce-outline);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding-top: 3rem;
+    border-radius: 1rem;
+}
+.warning-panel::before{
+    content: 'WARNING!';
+    position: absolute;
+    font-family: 'Arial-BD';
+    top: -1.9rem;
+    left: 2rem;
+    background-image: url(../img/WARNING_BG.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 10px 15px 5px 56px;
+    border-radius: 10px;
+}
+
+.notice-panel{
+    position: relative;
+    border: 1px solid var(--vce-outline);
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.notice-panel::before{
+    content: 'NOTICE';
+    position: absolute;
+    font-family: 'Arial-BD';
+    top: -25px;
+    left: 21px;
+    background-color: var(--vce-notice-color);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 4px 20px 1px 20px;
+    border-radius: 10px;
+}
+
+.bordered{
+    border: 1px solid var(--vce-outline);
+}
+
+hr.vl{
+    width: 2px;
+    background-color: var(--vce-green-border);
+    height: 400px;
+    padding: 0px;
+    margin-top: 100px;
+}
+.disnone{
+    display: none;
+}

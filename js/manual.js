@@ -56,6 +56,7 @@ $(document).on("click", ".sidebar-link", function (event) {
         mainMenu: mainMenuTitle,
         mainMenuId: mainMenuId
     }
+    console.log(menuItem);
     VCE_Manual.LoadMenuItem(menuItem, this);
 });
 
@@ -69,10 +70,17 @@ $(document).on("click", ".nav-pills .nav-link", function(event){
     $("#" + tabId.replace("nav","num")).addClass("active");
 });
 $(document).on("click", ".instrument-container .nav-link-circle", function(event){
+    debugger;
+    $(".tab-pane").removeClass("active show")
     var tabtargetid = $(this).attr("data-bs-target");
     $(tabtargetid).tab("show");
     $(".nav-link-circle").removeClass("active");
     $(this).addClass("active");
+});
+
+$(document).on("click", ".btn-tooltip", function(event){
+    $('[data-toggle="tooltip"]').tooltip("hide").removeClass("active");
+    $(this).tooltip('show').addClass("active");
 });
 
 var VCE_Manual = (function () {
@@ -115,6 +123,12 @@ var VCE_Manual = (function () {
         $(p_this).addClass('active');
         $("a.sidebar-link[data-bs-target='#" + menuItem.mainMenuId + "']").addClass('active');
         $("#sidebar-link-content" ).load(menuContentUrl, function( response, status, xhr ) {
+            $(".btn-tooltip").tooltip({
+                placement: function(tip, element) {
+                    return element.attributes["data-placement"].value;
+                },
+                trigger: 'manual'
+            });
             if ( status == "error" ) {
               var msg = "There was an error: ";
               console.log(msg + xhr.status + " " + xhr.statusText);
