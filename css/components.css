@@ -101,3 +101,17 @@ hr.vl{
 .disnone{
     display: none;
 }
+/*** copyright Start ***/
+.copyright {
+    background: var(--vce-footer) !important;
+}
+/*** copyright end ***/
+
+.instruction_note{
+color: var(--vce-red-instr);
+}
+.disabled{
+    opacity: 0.3;
+    pointer-events:none;
+    cursor: not-allowed !important;
+}

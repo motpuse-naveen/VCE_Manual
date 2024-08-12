@@ -83,6 +83,22 @@ $(document).on("click", ".btn-tooltip", function(event){
     $(this).tooltip('show').addClass("active");
 });
 
+$(document).on("click", ".service-position button.step", function(event){
+    var datastep = $(this).attr("data-step");
+    $(".step.active").removeClass("active")
+    $(this).addClass("active")
+    $(".step-text").removeClass("active");
+    $(".step-text." + datastep).addClass("active");
+    $(".leftMachine .pos").addClass("disnone");
+    $(".rightMachine .pos").addClass("disnone");
+    $(".leftMachine .pos[data-step='" + datastep + "']").removeClass("disnone");
+    $(".rightMachine .pos[data-step='" + datastep + "']").removeClass("disnone");
+    $(".leftMachine").removeClass("step1 step2 step3 step4 step5 step6 step7 step8");
+    $(".rightMachine").removeClass("step1 step2 step3 step4 step5 step6 step7 step8");
+    $(".leftMachine").addClass(datastep);
+    $(".rightMachine").addClass(datastep);
+});
+
 var VCE_Manual = (function () {
     var _manualFolder = "";
     var _manualTitle = "";

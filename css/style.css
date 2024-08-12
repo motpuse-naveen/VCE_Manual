@@ -114,6 +114,17 @@ b{
 .btn-hover:hover {
     color: var(--bs-secondary) !important;
 }
+/*
+.wrapper{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.main-content-container{
+    height: calc(100% - 17rem);
+    overflow: auto;
+}
+*/
 
 /*** Section Title Start ***/
 .section-title {
@@ -519,7 +530,7 @@ b{
     /* height: 32px; */
     background-color: transparent;
     border: 0;
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
 }
 .sideBarMenu.active{
     background-image: url(../img/Menu_Active.png);
@@ -715,15 +726,7 @@ ul li ul li a.sidebar-link{
 
 /*** Footer End ***/
 
-/*** copyright Start ***/
-.copyright {
-    background: var(--vce-footer) !important;
-}
-/*** copyright end ***/
 
-.instruction_note{
-color: var(--vce-red-instr);
-}
 
 /*L45H-L50H*/
 .machine-tabs-container{
@@ -1302,6 +1305,12 @@ h3.tab-title{
 .btn-tooltip.tooltip12-2{
     top: -30px;
     left: 100px;
+
+}
+.machine-view .machine-container.mc3{
+    width: 668px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 .machine-view .machine-container.mc3 .direction-line{
     position: absolute;
@@ -1337,7 +1346,7 @@ h3.tab-title{
     margin: auto;
 }
 .maintenance-service .oil-bath-img{
-    width: 300px;
+    width: 500px;
     display: block;
     margin: auto;
 }
@@ -1345,3 +1354,255 @@ h3.tab-title{
     width: 100%;
     text-align: center;
 }
+
+.service-position .leftMachine, .service-position .rightMachine{
+    width: 650px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
+.rowPositions{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+.rowStepper{
+    padding: 0px 20px;
+}
+.colStepper{
+    border: 2px solid var(--vce-gray-border);
+    margin: auto;
+    margin-bottom: 3rem;
+    max-width: 1800px;
+    border-radius: 1rem;
+}
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -20px;
+    position: relative;
+}
+
+button.step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    background-color: var(--vce-blue);
+    border: 0;
+    outline: 2px solid var(--vce-bark-blue);
+}
+button.step.active{
+    color: #000;
+    background-color: var(--vce-green);
+    outline: 2px solid var(--vce-green-border);
+}
+button.step:focus:not(:focus-visible){
+    outline: 2px solid var(--vce-bark-blue);
+}
+button.step.active:focus:not(:focus-visible){
+    outline: 2px solid var(--vce-green-border);
+}
+button.step:last-child::after {
+    display: none;
+}
+
+.step-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;
+    flex: 1;
+    flex-grow: 1;*/
+}
+.text-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 0 2rem 0;
+}
+
+.service-position .step-text{
+    display: none;
+    margin: 0;
+}
+.service-position .step-text.active{
+    display: block;
+}
+.disnone{
+    display: none !important;
+}
+.step-bar{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 6px;
+    background-color: var(--vce-blue);
+    z-index: 0;
+}
+.leftMachine .pos, .rightMachine .pos{
+    position: absolute;
+    display: none;
+}
+.pos .popimg{
+    flex: 1 1 100%;
+}
+.pos .circle-cont{
+    flex: 1 1 100%;
+}
+.pos .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #000;
+    background-color: var(--vce-green);
+    border: 2px solid var(--vce-green-border);
+    margin: auto;
+}
+.circle.c4{
+    margin: 0 0 0 auto;
+}
+.circle.c5{
+    margin: auto 0 0 0;
+}
+.circle.c8{
+    margin: 0 0 0 auto;
+}
+.leftMachine .pos1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 186px;
+    top: 210px;
+}
+.rightMachine .pos1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 200px;
+    top: 200px;
+}
+.leftMachine .pos2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 40px;
+    top: 236px;
+}
+.rightMachine .pos2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 10px;
+    top: 115px;
+}
+.leftMachine .pos3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 300px;
+    top: -239px;
+}
+.rightMachine .pos3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 312px;
+    top: -245px;
+}
+
+.leftMachine .pos4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 364px;
+    top: -215px;
+}
+.rightMachine .pos4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 368px;
+    top: -209px;
+}
+.leftMachine .pos5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 145px;
+    top: -215px;
+}
+.rightMachine .pos5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 155px;
+    top: -220px;
+}
+.leftMachine .pos6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    right: 62px;
+    bottom: -204px;
+}
+.rightMachine .pos6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    right: 49px;
+    bottom: -197px;
+}
+
+.leftMachine .pos7 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    right: 175px;
+    bottom: -249px;
+}
+.rightMachine .pos7 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    right: 160px;
+    bottom: -239px;
+}
+.leftMachine .pos8 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    right: -87px;
+    bottom: -237px;
+}
+.rightMachine .pos8 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    right: -98px;
+    bottom: -237px;
+}
+.leftMachine.step1, .leftMachine.step2, .leftMachine.step6, .leftMachine.step7, .leftMachine.step8,
+.rightMachine.step1, .rightMachine.step2, .rightMachine.step6, .rightMachine.step7, .rightMachine.step8{
+    margin-bottom: 260px;
+}
+.leftMachine.step3, .leftMachine.step4, .leftMachine.step5,
+.rightMachine.step3, .rightMachine.step4, .rightMachine.step5{
+    margin-top: 235px;
+}
+
