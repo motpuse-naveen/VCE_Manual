@@ -12,7 +12,6 @@ h3.heading, h4.heading, h5.heading, h6.heading{
 }
 h3.heading{
     margin-bottom: 1rem;
-    font-size: 24pt;
 }
 b{
     font-family: 'Arial-BD';
@@ -220,12 +219,7 @@ b{
     color: var(--bs-secondary) !important;
 }
 
-@media (max-width: 576px) {
-    .topbar {
-        display: none;    
-    }
-}
-/*** Topbar End ***/
+
 
 
 /*** Navbar ***/
@@ -238,7 +232,6 @@ b{
     margin-right: 25px;
     padding: 35px 0;
     color: var(--bs-dark) !important;
-    font-size: 16px;
     font-weight: 400;
     outline: none;
     transition: .5s;
@@ -272,19 +265,7 @@ b{
     margin-left: 8px;
 }
 
-@media (min-width: 1200px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        visibility: hidden;
-        top: 100%;
-        transform: rotateX(-75deg);
-        transform-origin: 0% 0%;
-        border: 0;
-        border-radius: 10px;
-        transition: .5s;
-        opacity: 0;
-    }
-}
+
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-primary);
@@ -299,63 +280,40 @@ b{
     opacity: 1;
 }
 
-@media (max-width: 991.98px) {
-    .sticky-top.navbar-light {
-        position: relative;
-        background: var(--bs-white);
-    }
-
-    .navbar.navbar-expand-lg .navbar-toggler {
-        padding: 10px 20px;
-        border: 1px solid var(--bs-primary);
-        color: var(--bs-primary);
-    }
-
-    .navbar-light .navbar-nav .nav-link,
-    .sticky-top.navbar-light .navbar-nav .nav-link {
-        padding: 10px 0;
-        margin-left: 0;
-        color: var(--bs-dark) !important;
-    }
+.navbar-light {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    z-index: 100;
 }
 
-@media (min-width: 992px) {
-    .navbar-light {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .1);
-        z-index: 100;
-    }
-    
-    .sticky-top.navbar-light {
-        position: fixed;
-        background: var(--bs-light) !important;
-    }
-
-    .navbar-light .navbar-nav .nav-link::before {
-        position: absolute;
-        content: "";
-        width: 0;
-        height: 2px;
-        bottom: -1px;
-        left: 50%;
-        background: var(--bs-primary);
-        transition: .5s;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover::before,
-    .navbar-light .navbar-nav .nav-link.active::before {
-        width: calc(100% - 2px);
-        left: 1px;
-    }
-
-    .navbar-light .navbar-nav .nav-link.nav-contact::before {
-        display: none;
-    }
+.sticky-top.navbar-light {
+    position: fixed;
+    background: var(--bs-light) !important;
 }
 
+.navbar-light .navbar-nav .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 50%;
+    background: var(--bs-primary);
+    transition: .5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before,
+.navbar-light .navbar-nav .nav-link.active::before {
+    width: calc(100% - 2px);
+    left: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.nav-contact::before {
+    display: none;
+}
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
@@ -432,8 +390,6 @@ b{
     color: var(--vce-black);
     transition: 0.5s;
     font-family: "Arial-Reg";
-    font-size: 22pt;
-    /*text-transform: uppercase;*/
     min-height: 105px;
 }
 
@@ -458,21 +414,19 @@ b{
 
 .logo-title{
     font-family: 'VolvoBroad';
-    font-size: 65pt;
     color: #000000;
     padding-left: 30px;
 }
 
 .manual-title{
     font-family: 'VolvoBroad';
-    font-size: 35pt;
     color: var(--vce-blue);
     margin-bottom: -15px !important;
 }
 .manual-model{
     font-family: 'VolvoBroad';
-    font-size: 65pt;
     color: var(--vce-blue);
+    margin-bottom: 0;
 }
 .manual-border{
     border: 1px solid #000000aa;
@@ -481,7 +435,7 @@ b{
     padding-top: 14rem !important;
 }
 .mt-10{
-    margin-top: 14rem !important;
+    margin-top: 13rem !important;
     padding-top: 0;
 }
 .pb-5{
@@ -503,7 +457,7 @@ b{
     /*height: 100px;*/
 }
 .breadcrumb-panel-fix-ht{
-    height: 92px;
+    height: 90px;
 }
 .banner-nav-bar{
     display:block;
@@ -542,7 +496,6 @@ b{
     text-decoration: none;
     color: var(--vce-white);
     font-family: 'Arial-Reg';
-    font-size: 22pt;
 }
 /*** Manual End ***/
 
@@ -610,19 +563,16 @@ b{
     /*overflow: hidden;*/
     transition: all 0.35s ease-in-out;
     font-family: 'Arial-Reg';
-    font-size: 22pt;
     padding-bottom: 2rem;
 }
 
 .manual-content-container .manual-heading-l2{
     font-family: 'VolvoBroad';
-    font-size: 50pt;
     color: var(--vce-blue);
     text-transform: capitalize;
 }
 .manual-content-container .manual-heading-l3{
     font-family: 'Arial-BD';
-    font-size: 26pt;
     margin: 1rem 0;
 }
 
@@ -633,13 +583,12 @@ b{
 .sidebar-nav {
     padding: 0;
     margin-top: 0rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 
 .sidebar-header {
     color: #e9ecef;
-    font-size: .75rem;
     padding: 1.5rem 1.5rem .375rem;
 }
 
@@ -649,7 +598,6 @@ b{
     position: relative;
     display: block;
     font-family: 'Arial-Reg';
-    font-size: 22pt;
     line-height: 1.3em;
 }
 
@@ -745,7 +693,6 @@ ul li ul li a.sidebar-link{
 h3.tab-title{
     margin-left: 1rem;
     display: inline-block;
-    font-size: 22pt;
 }
 .machine-container .nav-link, 
 .instrument-container .nav-link-circle,
@@ -759,7 +706,6 @@ h3.tab-title{
     background-color: var(--vce-blue);
     color: var(--vce-white);
     border: 2px solid var(--vce-bark-blue);
-    font-size: 22pt;
 }
 .instrument-container .nav-link-circle{
     background-color: var(--vce-gray);
@@ -797,7 +743,6 @@ h3.tab-title{
     background-color: var(--vce-green);
     color: var(--vce-black);
     display: inline-block;
-    font-size: 22pt;
 }
 .product-plates .nav-tabs{
     border-bottom: 0px;
@@ -970,7 +915,6 @@ h3.tab-title{
     background-color: var(--vce-blue);
     color: var(--vce-white);
     border: 2px solid var(--vce-bark-blue);
-    font-size: 22pt;
     padding: 0.4rem;
     margin-right: 1rem;
     line-height: 2rem;
@@ -1094,7 +1038,6 @@ h3.tab-title{
     background-color: var(--vce-green);
     color: var(--vce-black);
     border: 2px solid var(--vce-green-blue);
-    font-size: 22pt;
     padding: 0.7rem 0rem;
     margin-right: 1rem;
     line-height: 2rem;
@@ -1156,7 +1099,6 @@ h3.tab-title{
 .accordion-button{
     color: var(--vce-white);
     background-color: var(--vce-blue);
-    font-size: 22pt;
     font-family: 'Arial-BD';
 }
 .accordion-button:not(.collapsed){
@@ -1213,7 +1155,6 @@ h3.tab-title{
 .diagram-container .diagram-head{
     color: var(--vce-blue);
     text-align: center;
-    font-size: 18pt;
 }
 .diagram-container .diagram-text{
     text-align: center;
@@ -1241,7 +1182,6 @@ h3.tab-title{
     background-color: var(--vce-blue);
     color: var(--vce-white);
     border: 2px solid var(--vce-bark-blue);
-    font-size: 22pt;
 }
 .btn-tooltip.active,.btn-tooltip:hover,.btn-tooltip:focus
 {
@@ -1332,7 +1272,6 @@ h3.tab-title{
     text-align: center;
     background-color: #5C5C5C;
     border-radius: .25rem;
-    font-size: 22pt;
     border: 2px solid var(--vce-black);
     -webkit-box-shadow: 0px 0px 40px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 40px -10px rgba(0,0,0,0.75);
