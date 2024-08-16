@@ -12,7 +12,7 @@
 }
 .manual .manual-item .manual-content {
     font-size: 30px;
-    /*min-height: 105px;*/
+    min-height: 105px;
 }
 .manual-content-container .manual-heading-l3{
     font-size: 26px;
@@ -82,6 +82,7 @@ and (max-width: 1600px){
     }
     .manual .manual-item .manual-content {
         font-size: 24px;
+        min-height: 95px;
     }
     .manual-content-container .manual-heading-l3{
         font-size: 20px;
@@ -198,7 +199,7 @@ and (max-width: 1280px){
         margin-top: 8rem !important;
     }
     .manual-content-wrapper {
-        height: calc(100vh - 10rem);
+        height: calc(100vh - 11rem);
     }
     .px-lg-5 {
         padding-right: 2rem !important;

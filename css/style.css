@@ -33,8 +33,8 @@ b{
 .max-fixed{
     max-width: 1920px;
     margin: 0 auto;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    /*border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;*/
 }
 .logo-wrap{
     display: flex;
