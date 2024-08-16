@@ -1,47 +1,46 @@
 .logo-title{
-    font-size: 65pt;
+    font-size: 65px;
 }
 .manual-model{
-    font-size: 65pt;
+    font-size: 65px;
 }
 .manual-content-container .manual-heading-l2{
-    font-size: 50pt;
+    font-size: 50px;
 }
 .manual-title{
-    font-size: 35pt;
+    font-size: 35px;
 }
 .manual .manual-item .manual-content {
-    font-size: 30pt;
+    font-size: 30px;
+    /*min-height: 105px;*/
 }
 .manual-content-container .manual-heading-l3{
-    font-size: 26pt;
+    font-size: 26px;
 }
 h3.heading{
-    font-size: 24pt;
+    font-size: 24px;
 }
-.manual .manual-item .manual-content, .breadcrumb-item,.manual-content-container, 
+.breadcrumb-item,.manual-content-container, 
 .sidebar-item a.sidebar-link, h3.tab-title,.machine-container .nav-link,
 .instrument-container .nav-link-circle,.instrument-cab-post .nav-link-circle,
 .tab-pane span.tab-number, .nav-pills button.nav-link span.num-circle,
 .instrument-cab-post-container .tab-content .heading span.number, .accordion-button, 
 .btn-tooltip, .tooltip-inner
 {
-	font-size: 22pt
+	font-size: 22px
 }
 .diagram-container .diagram-head{
-    font-size: 18pt;
+    font-size: 18px;
 }
 .sidebar-header {
     font-size: 9pt;
 }
+
 .logo-title{
     padding-left: 30px;
 }
 .manual-title{
-    margin-bottom: -30px !important;
-}
-.manual .manual-item .manual-content {
-    min-height: 82px;
+    margin-bottom: -25px !important;
 }
 .manual-content-container {
     width: 100%;
@@ -52,68 +51,78 @@ a.sidebar-link {
 .manual-content-container .manual-heading-l3{
     margin: 1rem 0;
 }
+.mx2-3 {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+.px2-4 {
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+}
+.px2-5 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
 @media only screen
 and (max-width: 1600px){
     .logo-title{
-        font-size: 46pt;
+        font-size: 50px;
+    }
+    .logo-title {
+        padding-left: 20px;
     }
     .manual-model{
-        font-size: 46pt;
+        font-size: 50px;
     }
     .manual-content-container .manual-heading-l2{
-        font-size: 34pt;
+        font-size: 40px;
     }
     .manual-title{
-        font-size: 28pt;
+        font-size: 30px;
     }
     .manual .manual-item .manual-content {
-        font-size: 24pt;
+        font-size: 24px;
     }
     .manual-content-container .manual-heading-l3{
-        font-size: 18pt;
+        font-size: 20px;
     }
     h3.heading{
-        font-size: 18pt;
+        font-size: 20px;
     }
-    .manual .manual-item .manual-content, .breadcrumb-item,.manual-content-container, 
+    .breadcrumb-item,.manual-content-container, 
     .sidebar-item a.sidebar-link, h3.tab-title,.machine-container .nav-link,
     .instrument-container .nav-link-circle,.instrument-cab-post .nav-link-circle,
     .tab-pane span.tab-number, .nav-pills button.nav-link span.num-circle,
     .instrument-cab-post-container .tab-content .heading span.number, .accordion-button, 
     .btn-tooltip, .tooltip-inner
     {
-        font-size: 16pt
+        font-size: 18px
     }
     .navbar-light .navbar-nav .nav-link {
-        font-size: 16pt
+        font-size: 18px
     }
     .logo {
-        width: 70px;
-    }
-    .logo {
-        margin-top: -16px;
+        width: 50px;
     }
     .manual-title {
-        margin-bottom: -18px !important;
+        margin-bottom: -12px !important;
     }
     .manual-model{
         margin-bottom: 0rem;
     }
     .sideBarMenu{
         margin-top: 2px;
-    }
-    .breadcrumb-panel{
-        padding-top: 0.75rem !important;
-        padding-bottom: 0.75rem !important;
+        width: 30px;
+        height: 22px;
     }
     .pt-10 {
-        padding-top: 10rem !important;
+        padding-top: 8.5rem !important;
     }
     .mt-10 {
-        margin-top: 9rem !important;
+        margin-top: 8rem !important;
     }
     .manual-content-wrapper {
-        height: calc(100vh - 12rem);
+        height: calc(100vh - 10rem);
     }
     .px-lg-5 {
         padding-right: 2rem !important;
@@ -123,10 +132,14 @@ and (max-width: 1600px){
         margin-bottom: 0.5rem;
     }
     .sidebar-width.pb-5{
-        padding-bottom: 3rem !important;
+        padding-bottom: 2rem !important;
     }
     .breadcrumb-panel-fix-ht{
-        height: 56px;
+        height: 50px;
+    }
+    .py-3{
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
     }
 }
 
@@ -134,43 +147,40 @@ and (max-width: 1600px){
 @media only screen
 and (max-width: 1280px){
     .logo-title{
-        font-size: 38pt;
+        font-size: 46px;
+    }
+    .logo-title {
+        padding-left: 20px;
     }
     .manual-model{
-        font-size: 38pt;
+        font-size: 46px;
     }
     .manual-content-container .manual-heading-l2{
-        font-size: 28pt;
+        font-size: 30px;
     }
     .manual-title{
-        font-size: 21pt;
+        font-size: 26px;
     }
     .manual .manual-item .manual-content {
-        font-size: 20pt;
+        font-size: 20px;
     }
     .manual-content-container .manual-heading-l3{
-        font-size: 17pt;
+        font-size: 18px;
     }
     h3.heading{
-        font-size: 17pt;
+        font-size: 18px;
     }
-    .manual .manual-item .manual-content, .breadcrumb-item,.manual-content-container, 
+    .breadcrumb-item,.manual-content-container, 
     .sidebar-item a.sidebar-link, h3.tab-title,.machine-container .nav-link,
     .instrument-container .nav-link-circle,.instrument-cab-post .nav-link-circle,
     .tab-pane span.tab-number, .nav-pills button.nav-link span.num-circle,
     .instrument-cab-post-container .tab-content .heading span.number, .accordion-button, 
     .btn-tooltip, .tooltip-inner
     {
-        font-size: 15pt
+        font-size: 17px
     }
     .navbar-light .navbar-nav .nav-link {
-        font-size: 15pt
-    }
-    .logo {
-        width: 60px;
-    }
-    .logo {
-        margin-top: -12px;
+        font-size: 17px
     }
     .manual-title {
         margin-bottom: -18px !important;
@@ -181,18 +191,14 @@ and (max-width: 1280px){
     .sideBarMenu{
         margin-top: 2px;
     }
-    .breadcrumb-panel{
-        padding-top: 0.75rem !important;
-        padding-bottom: 0.75rem !important;
-    }
     .pt-10 {
-        padding-top: 9rem !important;
+        padding-top: 8.5rem !important;
     }
     .mt-10 {
-        margin-top: 8.5rem !important;
+        margin-top: 8rem !important;
     }
     .manual-content-wrapper {
-        height: calc(100vh - 12rem);
+        height: calc(100vh - 10rem);
     }
     .px-lg-5 {
         padding-right: 2rem !important;
@@ -202,7 +208,7 @@ and (max-width: 1280px){
         margin-bottom: 0.5rem;
     }
     .sidebar-width.pb-5{
-        padding-bottom: 3rem !important;
+        padding-bottom: 2rem !important;
     }
     .logo-title {
         padding-left: 15px;
@@ -212,7 +218,7 @@ and (max-width: 1280px){
 
 @media only screen
 and (max-width: 1024px){
-    .logo-title{
+    /*.logo-title{
         font-size: 30pt;
     }
     .manual-model{
@@ -223,16 +229,18 @@ and (max-width: 1024px){
     }
     .manual-title{
         font-size: 22pt;
+    }*/
+    .px2-4 {
+        padding-right: 1.4rem;
+        padding-left: 1.4rem;
     }
-    .logo {
-        width: 45px;
+    .px2-5 {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
-    .logo {
-        margin-top: -2px;
-    }
-    .px-4 {
-        padding-right: 1rem !important;
-        padding-left: 1rem !important;
+    .mx2-3 {
+        margin-right: 0.5rem !important;
+        margin-left: 0.5rem !important;
     }
     .pt-10 {
         padding-top: 8.2rem !important;
@@ -256,6 +264,12 @@ and (max-width: 1024px){
     .manual-model.px-4{
         padding-right: 0px !important;
     }
+    .sidebar-width{
+        width: 350px;
+    }
+    .sidebar-padding{
+        padding-left: 350px;
+    }
     
 }
 
@@ -265,6 +279,14 @@ and (max-width: 920px){
         display: flex;
         flex-direction: column;
         display: 100%;
+    }
+    .navbar-light .navbar-brand{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .breadcrumb-panel-fix-ht {
+        height: 45px;
     }
     .mx-3 {
         margin-left: 0.5rem !important;
@@ -288,154 +310,3 @@ and (max-width: 920px){
         padding: 10px 15px 5px 48px;
     }
 }
-
-/*
-@media only screen
-and (max-width: 1024px){
-    .banner-wrap.px-lg-5{
-        padding-right: 2rem!important;
-        padding-left: 2rem!important;
-    }
-    .breadcrumb-panel {
-        top: 82px;
-        z-index: 100;
-    }
-    .logo-title{
-        font-size: 46px;
-        padding-left: 20px;
-    }
-    .manual-title{
-        font-size: 28px;
-        margin-bottom: -15px !important;
-    }
-    .manual-model{
-        font-size: 46px;
-    }
-    .manual .manual-item .manual-content {
-        font-size: 22px;
-        min-height: 82px;
-    }
-    .breadcrumb-item{
-        font-size: 18px;
-    }
-    .manual-content-container {
-        width: 100%;
-        font-size: 18px;
-    }
-    a.sidebar-link {
-        padding: .625rem 1rem;
-        font-size: 18px;
-    }
-    .manual-content-container .manual-heading-l2{
-        font-size: 34px;
-    }
-    .manual-content-container .manual-heading-l3{
-        font-size: 22px;
-        margin: 1rem 0;
-    }
-    .pt-10{
-        padding-top: 9rem !important;
-    }
-    .mt-10{
-        margin-top: 9rem !important;
-        padding-top: 0;
-    }
-    .manual-content-wrapper {
-        height: calc(100vh - 12rem);
-    }
-    .logo {
-        width: 65px;
-        margin-top: -12px;
-    }
-    .py-4 {
-        padding-top: 1rem!important;
-        padding-bottom: 1rem!important;
-    }
-    .breadcrumb-panel-fix-ht {
-        height: 60px;
-    }
-    .sideBarMenu{
-        margin-top: 0rem;
-    }
-    .sideBarMenu {
-        background-image: url(../img/Menu_Normal.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 30px;
-        background-color: transparent;
-        border: 0;
-        margin-top: 0.25rem;
-    }
-    .sticky-top.navbar-light {
-        position: fixed !important;
-        background: var(--bs-light) !important;
-        width: 100%;
-    }
-}
-
-@media only screen
-and (max-width: 800px){
-    .banner-wrap.px-lg-5 {
-        padding-right: 1rem!important;
-        padding-left: 1rem!important;
-    }
-    .logo-title {
-        font-size: 38px;
-        padding-left: 16px;
-    }
-    .manual-model {
-        font-size: 38px;
-    }
-    .manual-content-container .manual-heading-l2{
-        font-size: 30px;
-    }
-    .breadcrumb-panel{
-        position: unset;
-    }
-}
-
-@media only screen
-and (max-width: 740px){
-    .banner-wrap {
-        display: grid;
-        width: 100%;
-    }
-}
-
-@media only screen
-and (max-width: 530px){
-    .logo-title {
-        font-size: 28px;
-        padding-left: 16px;
-    }
-    .manual-model {
-        font-size: 28px;
-    }
-    .manual-title {
-        font-size: 20px;
-        margin-bottom: 6px !important;
-    }
-    .manual-content-container .manual-heading-l2 {
-        font-size: 26px;
-    }
-
-    .sidebar-nav.mx-3 {
-        margin-right: 0.5rem!important;
-        margin-left: 0.5rem!important;
-    }
-    #sidebar.collapsed {
-        margin-left: -270px;
-    }
-    .sidebar-width{
-        width: 270px;
-    }
-    .sidebar-padding{
-        padding-left: 270px;
-    }
-    .manual-content-container.mx-3{
-        margin-left: 0rem!important;
-        margin-right: 0rem!important;
-    }
-}
-
-*/

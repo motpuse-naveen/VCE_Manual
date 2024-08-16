@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <div class="wrapper">
+        <div class="wrapper max-fixed">
             <!-- Spinner Start -->
             <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
                 <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -34,11 +34,11 @@
             <!-- Spinner End -->
 
             <!-- Navbar & Hero Start -->
-            <div class="container-fluid position-relative p-0">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white banner-nav-bar sticky-top shadow-sm" style="display:block;">
-                    <div class="banner-wrap px-4 px-lg-5 py-2">
+            <div class="container-fluid position-relative p-0 max-fixed">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white banner-nav-bar sticky-top shadow-sm max-fixed" style="display:block;">
+                    <div class="banner-wrap px2-4 py-3">
                         <a href="index.html" class="navbar-brand p-0">
-                            <h1 class="text-primary m-0"><img src="img/Logo.png" class="logo"/><span class="logo-title">VOLVO CONSTRUCTION EQUIPMENT</span></h1>
+                            <h1 class="logo-wrap text-primary m-0"><img src="img/Logo.png" class="logo"/><span class="logo-title">VOLVO CONSTRUCTION EQUIPMENT</span></h1>
                             <!-- <img src="img/logo.png" alt="Logo"> -->
                         </a>
                         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -48,9 +48,9 @@
                             <h2 class="px-4 flex-wrap flex-sm-shrink-0 manual-model p-right-0">L45H/L50H</h2>
                         </div>
                     </div>
-                    <nav class="breadcrumb-panel px-4 px-lg-5 py-4" aria-label="breadcrumb">
+                    <nav class="breadcrumb-panel breadcrumb-panel-fix-ht px2-5" aria-label="breadcrumb">
                         <button type="button" id="sidebarCollapse" class="sideBarMenu active"></button>
-                        <div class="d-flex px-4 px-lg-5">
+                        <div class="d-flex">
                             <div class="vr vr-line"></div>
                         </div>
                         <ol class="breadcrumb">
@@ -69,24 +69,25 @@
                 </div>
             </aside>        
             <!-- Manual Start -->
-            <div id="manual-content-wrapper" class="container-fluid manual manual-content-wrapper mt-10 mb-5 sidebar-padding">
-                <div class="mx-3 px-3 my-3 manual-content-container" id="sidebar-link-content">
+            <div id="manual-content-wrapper" class="container-fluid manual manual-content-wrapper mt-10 mb-5 sidebar-padding max-fixed">
+                <div class="mx2-3 px-3 my-3 manual-content-container" id="sidebar-link-content">
                     <!--Load Menu Content here-->
                 </div>
             </div>
             <!-- Manual End -->
 
             <!-- Copyright Start -->
-            <div class="container-fluid fixed-bottom copyright py-4">
+            <div class="container-fluid fixed-bottom copyright max-fixed">
                 <div class="container">
                     <div class="row g-4 align-items-center">
-                        <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <div class="col-md-6 text-center text-md-start mb-md-0 mt-0">
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                         </div>
                     </div>
                 </div>
             </div>
+            <!--<img src="Screen_11_01.png" class="max-fixed" style="position:absolute;top: 0;z-index: 0;opacity: 0.7;">-->
         </div>
         
         <!-- JavaScript Libraries -->

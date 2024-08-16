@@ -4,8 +4,8 @@ ul.default-list{
     padding: 0;
 }
 ul.default-list li {
-    margin: 0 2rem;
-    padding: 0 1rem;
+    margin: 0.2rem 2rem;
+    padding: 0;
 }
 h3.heading, h4.heading, h5.heading, h6.heading{
     color: var(--vce-heading-blue);
@@ -29,6 +29,18 @@ b{
     opacity: 1;
 }
 /*** Spinner End ***/
+
+.max-fixed{
+    max-width: 1920px;
+    margin: 0 auto;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.logo-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .back-to-top {
     position: fixed;
@@ -196,7 +208,7 @@ b{
 
 .content-container{
     /*max-width: 1920px;*/
-    max-width: 90%;
+    max-width: 96%;
 }
 
 /*** Topbar Start ***/
@@ -284,7 +296,7 @@ b{
     position: absolute;
     width: 100%;
     top: 0;
-    left: 0;
+    /*left: 0;*/
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     z-index: 100;
 }
@@ -334,9 +346,13 @@ b{
 }
 .breadcrumb-item+.breadcrumb-item::before{
     float:left;
-    padding-right:1.5rem;
+    padding-right:1rem;
+    padding-left:1rem;
     color:#D4D5D6;
     content:var(--bs-breadcrumb-divider, ">") !important;
+}
+.breadcrumb-item+.breadcrumb-item{
+    padding-left: 0rem;
 }
 
 /*** Manual Start ***/
@@ -390,7 +406,9 @@ b{
     color: var(--vce-black);
     transition: 0.5s;
     font-family: "Arial-Reg";
-    min-height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .manual .manual-item .manual-content h5 {
@@ -407,11 +425,6 @@ b{
     color: var(--vce-black);
 }
 
-.logo {
-    /*width: 100px;*/
-    margin-top: -32px;
-}
-
 .logo-title{
     font-family: 'VolvoBroad';
     color: #000000;
@@ -421,7 +434,6 @@ b{
 .manual-title{
     font-family: 'VolvoBroad';
     color: var(--vce-blue);
-    margin-bottom: -15px !important;
 }
 .manual-model{
     font-family: 'VolvoBroad';
@@ -432,32 +444,26 @@ b{
     border: 1px solid #000000aa;
 }
 .pt-10{
-    padding-top: 14rem !important;
+    padding-top: 12.5rem !important;
 }
 .mt-10{
-    margin-top: 13rem !important;
+    margin-top: 12rem !important;
     padding-top: 0;
 }
 .pb-5{
     padding-bottom: 2rem!important;
 }
 .mb-5{
-    margin-bottom: 3rem!important;
+    margin-bottom: 2rem!important;
     padding-bottom: 0;
 }
 .breadcrumb-panel{
     display: flex;
     background: var(--vce-bark-blue);
-    padding-top: 1.4rem!important;
-    padding-bottom: 1.4rem!important;
-    /*width: 100%;
-    position: absolute;
-    top: 136px;
-    z-index: 100;*/
-    /*height: 100px;*/
+    align-items: center;
 }
 .breadcrumb-panel-fix-ht{
-    height: 90px;
+    height: 70px;
 }
 .banner-nav-bar{
     display:block;
@@ -474,17 +480,17 @@ b{
 .vr-line{
     color: var(--vce-white);
     opacity: 0.7;
-    height: 100%;
+    height: 1.5em;
+    margin: 1.5rem;
 }
 .sideBarMenu{
     background-image: url(../img/Menu_Normal.png);
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: contain;
     width: 36px;
-    /* height: 32px; */
+    height: 26px;
     background-color: transparent;
     border: 0;
-    margin-top: 0.5rem;
 }
 .sideBarMenu.active{
     background-image: url(../img/Menu_Active.png);
@@ -505,10 +511,11 @@ b{
     align-items: stretch;
     display: flex;
     width: 100%;
-    height: calc(100vh - 17rem);
+    height: calc(100vh - 14rem);
     padding-left:0;
     padding-right:0;
     overflow: auto;
+    transition: all 0.5s ease-in-out;
 }
 
 #sidebar {
@@ -545,15 +552,14 @@ b{
     background-color: #DCDDD8;
 }
 #sidebar.collapsed {
-    margin-left: -450px;
+    width: 0;
 }
 .sidebar-width{
-    width: 450px;
+    width: 400px;
     background-color: #DCDDD8;
 }
 .sidebar-padding{
-    transition: all 0.6s ease;
-    padding-left: 450px;
+    padding-left: 400px;
 }
 
 .manual-content-container {
@@ -693,6 +699,7 @@ ul li ul li a.sidebar-link{
 h3.tab-title{
     margin-left: 1rem;
     display: inline-block;
+    margin-top: 0.5rem;
 }
 .machine-container .nav-link, 
 .instrument-container .nav-link-circle,
@@ -742,7 +749,18 @@ h3.tab-title{
     border: 2px solid var(--vce-green-border);
     background-color: var(--vce-green);
     color: var(--vce-black);
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.tab-pane .tab-image{
+    min-width:220px;
+    max-width: 300px;
+}
+.tab-pane .tab-image-550{
+    min-width:220px;
+    max-width: 550px;
 }
 .product-plates .nav-tabs{
     border-bottom: 0px;
@@ -750,6 +768,7 @@ h3.tab-title{
 .machine-tabs-container .tab-content{
     margin-top: 2rem;
 }
+
 .machine-tabs-container .tab-text{
     margin-top: 1.5rem;
 }
@@ -901,8 +920,20 @@ h3.tab-title{
     line-height: 1.3em;
     color: var(--vce-white);
     text-align: left;
+}
+.instrument-panels-front .nav-pills .nav-link{
+    border-radius: 0.5rem;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+.eco_driving .nav-pills .nav-link{
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 96%;
+}
+.eco_driving .nav-pills .nav-item{
+flex: 1;
 }
 .instrument-panels-front .nav-pills .nav-link .flex-column{
     white-space: nowrap;
@@ -923,10 +954,14 @@ h3.tab-title{
     padding: 1rem;
     padding-top: 3rem;
     border: 1px solid var(--vce-black);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     flex: 1;
     align-self: stretch;
     min-width: 450px;
+}
+.v-tab-container .nav-pills{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .nav-pills .nav-link.active, .nav-pills .nav-link:focus, .nav-pills .nav-link:hover {
@@ -1058,7 +1093,7 @@ h3.tab-title{
 
 .instrument-cab-post-container .tab-content .content-wrap ul li{
     margin-left: 2rem;
-    padding-left: 1rem;
+    padding-left: 0.2rem;
 }
 
 .climate-control-img{
@@ -1113,6 +1148,7 @@ h3.tab-title{
 
 .graph-img{
     margin: 2rem 3rem;
+    max-width: 84%;
 }
 
 .eco-drive-nav{
@@ -1544,4 +1580,3 @@ button.step:last-child::after {
 .rightMachine.step3, .rightMachine.step4, .rightMachine.step5{
     margin-top: 235px;
 }
-

@@ -68,6 +68,7 @@ $(document).on("click", ".nav-pills .nav-link", function(event){
     var tabId = $(this).attr("id");
     $(".nav-link-circle").removeClass("active");
     $("#" + tabId.replace("nav","num")).addClass("active");
+    $(this).addClass("active");
 });
 $(document).on("click", ".instrument-container .nav-link-circle", function(event){
     debugger;
@@ -77,11 +78,23 @@ $(document).on("click", ".instrument-container .nav-link-circle", function(event
     $(".nav-link-circle").removeClass("active");
     $(this).addClass("active");
 });
-
+/*
 $(document).on("click", ".btn-tooltip", function(event){
     $('[data-toggle="tooltip"]').tooltip("hide").removeClass("active");
-    $(this).tooltip('show').addClass("active");
+    $(this).tooltip('show',element,{
+        container: element.parentElement,
+    }).addClass("active");
 });
+*/
+/*
+$(document).on('click', function(e) {
+    if (!$(e.target).closest('.btn-tooltip').length) {
+      $(".btn-tooltip").tooltip('hide');  // Hide tooltip when clicking outside the button
+    }
+  });
+  */
+
+  
 
 $(document).on("click", ".service-position button.step", function(event){
     var datastep = $(this).attr("data-step");
@@ -139,12 +152,40 @@ var VCE_Manual = (function () {
         $(p_this).addClass('active');
         $("a.sidebar-link[data-bs-target='#" + menuItem.mainMenuId + "']").addClass('active');
         $("#sidebar-link-content" ).load(menuContentUrl, function( response, status, xhr ) {
-            $(".btn-tooltip").tooltip({
+            /*$(".btn-tooltip").tooltip({
+                trigger: 'manual',
                 placement: function(tip, element) {
-                    return element.attributes["data-placement"].value;
-                },
-                trigger: 'manual'
+                  return element.getAttribute("data-placement"); // Use element.getAttribute instead of accessing attributes directly
+                }
+            });*/
+            $(".btn-tooltip").each(function () {
+                const element = this;
+            
+                // Initialize tooltip with the desired options
+                $(element).tooltip({
+                    trigger: 'manual',  // Manual trigger
+                    container: element.parentElement,  // Set parent element as container
+                    placement: function() {
+                        return element.getAttribute("data-placement");  // Get placement from data attribute
+                    }
+                });
+                
+                // Show the tooltip and add the active class on click
+                $(element).on('click', function() {
+                    // Check if the current tooltip is already shown (has 'active' class)
+                    if ($(element).hasClass("active")) {
+                        // If active, hide the tooltip and remove the active class
+                        $(element).tooltip('hide').removeClass("active");
+                    } else {
+                        // Hide any other open tooltips
+                        $(".btn-tooltip").tooltip('hide').removeClass("active");
+
+                        // Show the clicked tooltip and add the active class
+                        $(element).tooltip('show').addClass("active");
+                    }
+                });
             });
+              
             if ( status == "error" ) {
               var msg = "There was an error: ";
               console.log(msg + xhr.status + " " + xhr.statusText);
