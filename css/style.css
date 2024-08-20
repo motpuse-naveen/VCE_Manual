@@ -809,7 +809,7 @@ h3.tab-title{
     left: 76%;
 }
 .product-plates .machine-container #nav-9-tab{
-    top: 87%;
+    top: 85%;
     left: 40%;
 }
 
@@ -1072,12 +1072,15 @@ flex: 1;
     text-align: center;
     background-color: var(--vce-green);
     color: var(--vce-black);
-    border: 2px solid var(--vce-green-blue);
+    border: 2px solid var(--vce-green-border);
     padding: 0.7rem 0rem;
     margin-right: 1rem;
     line-height: 2rem;
     position: absolute;
     top: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .instrument-cab-post-container .tab-content .heading span.text{
     padding-left: 4rem;
@@ -1230,28 +1233,28 @@ flex: 1;
     left: 40px;
 }
 .btn-tooltip.tooltip2{
-    top: 60px;
-    left: 185px;
+    top: 58px;
+    left: 182px;
 }
 .btn-tooltip.tooltip3{
-    bottom: 0px;
-    left: 329px;
+    bottom: -20px;
+    left: 325px;
 }
 .btn-tooltip.tooltip4-1{
-    bottom: 5px;
-    left: 425px;
+    bottom: -10px;
+    left: 420px;
 }
 .btn-tooltip.tooltip4-2{
     top: 60px;
     left: 95px;
 }
 .btn-tooltip.tooltip5{
-    bottom: 33px;
-    left: 510px;
+    bottom: 26px;
+    left: 502px;
 }
 .btn-tooltip.tooltip6{
-    top: 68px;
-    right: 0px;
+    top: 60px;
+    right: -6px;
 }
 .btn-tooltip.tooltip7{
     top: 0px;
@@ -1263,25 +1266,24 @@ flex: 1;
     z-index: 2;
 }
 .btn-tooltip.tooltip9{
-    bottom: -15px;
-    left: 370px;
+    bottom: -38px;
+    left: 371px;
 }
 .btn-tooltip.tooltip10{
-    bottom: -24px;
-    left: 289px;
+    bottom: -36px;
+    left: 285px;
 }
 .btn-tooltip.tooltip11{
-    bottom: 0px;
-    left: -30px;
+    bottom: -5px;
+    left: -37px;
 }
 .btn-tooltip.tooltip12-1{
     top: -35px;
     left: 215px;
 }
 .btn-tooltip.tooltip12-2{
-    top: -30px;
-    left: 100px;
-
+    top: -34px;
+    left: 91px;
 }
 .machine-view .machine-container.mc3{
     width: 668px;
