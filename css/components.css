@@ -16,7 +16,7 @@
     --vce-bark-blue:#182871;
     --vce-white-bg:#F8F9FA;
     --vce-notice-color:#DCDDD7;
-    --vce-box-border: #
+    --vce-white-thumb:#E8E9EA;
 }
 
 .note-panel{
@@ -32,14 +32,14 @@
     content: 'NOTE!';
     position: absolute;
     font-family: 'Arial-BD';
-    top: -25px;
+    top: -22px;
     left: 21px;
     background-image: url(../img/Note.png);
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
-    padding: 6px 15px 0px 48px;
-    border-radius: 10px;
+    padding: 6px 12px 2px 48px;
+    border-radius: 6px;
 }
 
 .warning-panel{
@@ -55,14 +55,14 @@
     content: 'WARNING!';
     position: absolute;
     font-family: 'Arial-BD';
-    top: -24px;
+    top: -25px;
     left: 32px;
     background-image: url(../img/WARNING_BG.png);
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
-    padding: 10px 15px 5px 56px;
-    border-radius: 10px;
+    padding: 10px 20px 7px 56px;
+    border-radius: 6px;
 }
 
 .notice-panel{
@@ -78,14 +78,14 @@
     content: 'NOTICE';
     position: absolute;
     font-family: 'Arial-BD';
-    top: -19px;
+    top: -20px;
     left: 21px;
     background-color: var(--vce-notice-color);
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
-    padding: 4px 20px 1px 20px;
-    border-radius: 10px;
+    padding: 4px 15px 1px 15px;
+    border-radius: 6px;
 }
 
 .bordered{

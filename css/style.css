@@ -1202,7 +1202,7 @@ flex: 1;
     padding: 0 1rem;
     margin: 0 1rem;
     margin-bottom: 3rem;
-    background-color: var(--vce-white-bg);
+    background-color:var(--vce-white-thumb);
 }
 .machine-img{
     width: 100%;

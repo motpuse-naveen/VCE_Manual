@@ -142,6 +142,17 @@ and (max-width: 1600px){
         padding-top: 0.5rem !important;
         padding-bottom: 0.5rem !important;
     }
+    .warning-panel::before{
+        top: -23px;
+        padding: 10px 15px 7px 46px;
+    }
+    .note-panel::before{
+        top: -18px;
+        padding: 6px 10px 2px 40px;
+    }
+    .notice-panel::before{
+        top: -16px;
+    }
 }
 
 
@@ -302,12 +313,13 @@ and (max-width: 920px){
         height: calc(100vh - 14rem);
     }
     .note-panel::before{
-        top: -20px;
-        padding: 6px 15px 2px 48px;
-        border-radius: 10px;
+        top: -18px;
+        padding: 6px 10px 2px 40px;
+        border-radius: 6px;
     }
     .warning-panel::before{
-        top: -1.4rem;
-        padding: 10px 15px 5px 48px;
+        top: -23px;
+        padding: 10px 15px 7px 46px;
+        border-radius: 6px;
     }
 }
